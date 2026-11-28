@@ -1,0 +1,86 @@
+# --- Secrets: NEVER commit ---
+.env*
+!.env.example
+!**/.env.example
+*.key
+*credential*
+*secret*
+
+# --- Generated video artifacts / large media ---
+.media-library/
+Media Lib/
+workspace/
+b-rolls/
+02. Projects/Xưởng Video AI/videos/**/media/
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.webm
+
+# --- Node / build ---
+node_modules/
+.pnpm-store/
+dist/
+build/
+.cache/
+out/
+
+# --- Imported guide runtime output ---
+huong dan/MKT.LANDINGPAGE.SKILLS-main/output/
+huong dan/**/.env
+huong dan/30. Thư Viện Skill/_Kho Skill/
+huong dan/**/.agents/skills/
+huong dan/**/.claude/skills/
+
+# --- Nested local repositories ---
+tools/hidrix-tools/
+
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+**/.python-packages/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+config.bat
+.mac brandon/
+
+# Thông tin truy cập máy từ xa — không đẩy lên git
+.orca-ssh/
+
+**/Nguồn/**/*.pdf
+.obsidian/icons/
+.obsidian/themes/
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/*.zip
+01. Inbox/tmb_raw/
+01. Inbox/salepro/
+01. Inbox/mau-nha/
+.obsidian/workspace*.json
+.obsidian/plugins/obsidian-excalidraw-plugin/data.json
+.obsidian/plugins/*/styles.css
+
+# CRM có dữ liệu nhận diện khách — chỉ theo dõi file mẫu trống
+People/*
+!People/[[]Mẫu] Khách.md
+
+# CRM có dữ liệu cá nhân; chỉ theo dõi quy ước, dashboard và mẫu trống
+04. Resources/People/*
+!04. Resources/People/QUY-UOC-DU-LIEU-NGUOI.md
+!04. Resources/People/_TEMPLATE-nguoi.md
+!04. Resources/People/_MOC.md
+04. Resources/Meetings/*
+!04. Resources/Meetings/_TEMPLATE-gap.md
+
+# Không đẩy mã plugin, dữ liệu plugin hoặc token cục bộ
+.obsidian/plugins/

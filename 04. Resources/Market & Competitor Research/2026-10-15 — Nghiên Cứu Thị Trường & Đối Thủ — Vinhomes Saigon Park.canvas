@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"market","type":"text","text":"# Thị trường\n\nTín hiệu chào bán và nội dung đang hoạt động. Chưa có dữ liệu độc lập về giao dịch, hấp thụ hoặc quy mô cầu thật.\n\nGiá rao không đồng nghĩa giá chốt.","x":0,"y":0,"width":300,"height":220,"color":"4"},
+		{"id":"buyers","type":"text","text":"# Khách mua\n\nƯu tiên: nhà đầu tư Vinhomes.\n\nNhu cầu cần kiểm chứng: dòng tiền, phương án thanh toán, pháp lý, cho thuê/chuyển nhượng.\n\nNhóm kế tiếp: gia đình mua để ở.","x":370,"y":0,"width":300,"height":240,"color":"5"},
+		{"id":"competitors","type":"text","text":"# Đối thủ nội dung\n\nSnapshot 14/09: 19 kênh; 12 có video trong 14 ngày.\n\n@chuyenvinhomeshocmon: median 1.789 view / 30 video.\n\n@batdongsanvinhomes.01: 146.607 view tổng, median 591.","x":740,"y":0,"width":330,"height":260,"color":"3"},
+		{"id":"gap","type":"text","text":"# Khoảng trống\n\nMinh bạch theo từng căn:\n- nguồn và ngày cập nhật\n- loại giao dịch/bàn giao\n- tổng nghĩa vụ thanh toán\n- phần đã xác minh và phần còn giả định\n\nKhông hứa lợi nhuận.","x":370,"y":320,"width":300,"height":250,"color":"6"},
+		{"id":"limits","type":"text","text":"# Giới hạn dữ liệu\n\nChưa biết số giao dịch, hấp thụ, giá chốt, lead đủ điều kiện, tiền thuê thực thu hoặc hiệu quả funnel.\n\nView/tin rao không đại diện cầu mua.","x":0,"y":320,"width":300,"height":230,"color":"1"},
+		{"id":"next","type":"text","text":"# Bước nghiên cứu kế\n\n1. Chuẩn hóa 20–30 tin rao theo cùng điều kiện.\n2. Phỏng vấn 8–12 khách/lead.\n3. Theo dõi lead → tư vấn → tham quan → đặt cọc.\n4. Xác minh pháp nhân/đại lý của 3–5 đối thủ.","x":740,"y":340,"width":330,"height":260,"color":"2"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"market","fromSide":"right","toNode":"buyers","toSide":"left"},
+		{"id":"e2","fromNode":"buyers","fromSide":"right","toNode":"competitors","toSide":"left"},
+		{"id":"e3","fromNode":"buyers","fromSide":"bottom","toNode":"gap","toSide":"top"},
+		{"id":"e4","fromNode":"limits","fromSide":"right","toNode":"gap","toSide":"left"},
+		{"id":"e5","fromNode":"gap","fromSide":"right","toNode":"next","toSide":"left"},
+		{"id":"e6","fromNode":"competitors","fromSide":"bottom","toNode":"next","toSide":"top"}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "cssTheme": "Soft Paper",
+  "theme": "moonstone",
+  "accentColor": "#0E7C8B",
+  "enabledCssSnippets": [
+    "highlight-color",
+    "callouts",
+    "nick-milo-callouts",
+    "watermark",
+    "popover-tweek",
+    "highlighter",
+    "workspace",
+    "markdown-embed",
+    "thuy-v2"
+  ],
+  "showRibbon": true
+}
